@@ -1,0 +1,7 @@
+/**
+MongoClientURI uri = new MongoClientURI(
+    "mongodb+srv://admin:<p4ssw0rd>@cluster0.e1tac.mongodb.net/<dbname>?retryWrites=true&w=majority");
+MongoClient mongoClient = new MongoClient(uri);
+MongoDatabase database = mongoClient.getDatabase("test");
+
+**/
