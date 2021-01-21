@@ -2,4 +2,4 @@ language: java
 sudo: false
 before_install:
  - chmod +x gradlew
-script: gradle assemble
+script: ./gradlew assemble
