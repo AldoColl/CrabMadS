@@ -17,6 +17,7 @@ public class SecurityConfig {
                         .pathMatchers(HttpMethod.PATCH, "/api/v1/articles").authenticated()
                         .pathMatchers(HttpMethod.POST, "/api/v1/articles").authenticated()
                         .pathMatchers("/create.html").authenticated()
+                        .pathMatchers("/update.html").authenticated()
                         .anyExchange().permitAll()
         ).csrf().disable().oauth2Login();
 

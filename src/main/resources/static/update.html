@@ -17,19 +17,21 @@
     <br />
 
     <form>
-        <label for="article-content">Article Content</label><br />
-        <textarea rows="20" cols="80" id="article-content"></textarea><br /><br />
-        <input type="button" value="Create" onclick="submitCreateArticle()">
+      <label for="article-content">Article Content</label><br />
+      <textarea rows="20" cols="80" id="article-content"></textarea><br /><br />
+      <input type="button" value="Update" onclick="submitUpdateArticle()">
     </form>
 
     <p>
       <span id="user-display"></span>
+        <a id="article-url" href="">[Cancel]</a>
       <a href="/">[Home]</a>
     </p>
 
     <script src="/js/core.js"></script>
     <script>
       loadUserData();
+      loadArticleForm();
     </script>
   </body>
 </html>
