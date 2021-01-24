@@ -14,22 +14,25 @@
     <br />
     <br />
     <br />
+    <p>By <span id="article-author"></span> on <span id="article-created"></span> [Last updated <span id="article-updated"></span>]</p>
     <br />
-    <p>
-      <h2>Articles</h2>
-      <ul id="article-list">
-      </ul>
-    </p>
-
+    <br />
+    <pre><code id="article-content"></code></pre>
+    <br />
+    <br />
+    <br />
     <p>
       <span id="user-display"></span>
       <a id="login-button" href="/auth">[Login]</a>
       <a id="create-button" href="/create.html">[Create Article]</a>
+      <a id="update-button" href="">[Edit Article]</a>
+      <a href="/">[Home]</a>
     </p>
+
     <script src="/js/core.js"></script>
     <script>
-      checkAuth();
-      loadArticleList();
+        checkAuth();
+        loadArticle();
     </script>
   </body>
-</html>
+</html><br />

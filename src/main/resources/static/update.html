@@ -15,21 +15,23 @@
     <br />
     <br />
     <br />
-    <p>
-      <h2>Articles</h2>
-      <ul id="article-list">
-      </ul>
-    </p>
+
+    <form>
+      <label for="article-content">Article Content</label><br />
+      <textarea rows="20" cols="80" id="article-content"></textarea><br /><br />
+      <input type="button" value="Update" onclick="submitUpdateArticle()">
+    </form>
 
     <p>
       <span id="user-display"></span>
-      <a id="login-button" href="/auth">[Login]</a>
-      <a id="create-button" href="/create.html">[Create Article]</a>
+        <a id="article-url" href="">[Cancel]</a>
+      <a href="/">[Home]</a>
     </p>
+
     <script src="/js/core.js"></script>
     <script>
-      checkAuth();
-      loadArticleList();
+      loadUserData();
+      loadArticleForm();
     </script>
   </body>
 </html>
