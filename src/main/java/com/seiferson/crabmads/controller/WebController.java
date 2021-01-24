@@ -21,4 +21,9 @@ public class WebController {
         response.getHeaders().setLocation(URI.create("/?auth="+principal.getAttribute("login")));
         return response.setComplete();
     }
+
+    @GetMapping("/create")
+    public Mono<String> createArticle() {
+        return Mono.just("create");
+    }
 }

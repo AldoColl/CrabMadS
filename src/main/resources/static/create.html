@@ -15,21 +15,20 @@
     <br />
     <br />
     <br />
-    <p>
-      <h2>Articles</h2>
-      <ul id="article-list">
-      </ul>
-    </p>
 
-    <p>
-      <span id="user-display"></span>
-      <a id="login-button" href="/auth">[Login]</a>
-      <a id="create-button" href="/create.html">[Create Article]</a>
-    </p>
+    <form>
+        <label for="article-content">Article Content</label><br />
+        <textarea rows="20" cols="80" id="article-content"></textarea><br /><br />
+        <input type="button" value="Create" onclick="submitCreateArticle()">
+    </form>
+
     <script src="/js/core.js"></script>
+    <p>
+      <span id="user-display">anon</span>
+      <a href="/">[Home]</a>
+    </p>
     <script>
-      checkAuth();
-      loadArticleList();
+
     </script>
   </body>
 </html>
